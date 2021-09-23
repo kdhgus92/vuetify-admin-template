@@ -1,11 +1,18 @@
 <template>
   <v-app>
-    <v-app-bar app color="primary" dark>
+    <v-app-bar
+      app
+      color="primary"
+      dark
+    >
       <v-app-bar-nav-icon @click="drawer = !drawer" />
 
       <v-spacer />
     </v-app-bar>
-    <v-navigation-drawer v-model="drawer" app>
+    <v-navigation-drawer
+      v-model="drawer"
+      app
+    >
       <v-list-item>
         <v-list-item-content>
           <v-list-item-title class="text-h6">
@@ -19,8 +26,16 @@
 
       <v-divider />
 
-      <v-list dense nav>
-        <v-list-item v-for="item in items" :key="item.title" link :to="item.to">
+      <v-list
+        dense
+        nav
+      >
+        <v-list-item
+          v-for="item in items"
+          :key="item.title"
+          link
+          :to="item.to"
+        >
           <v-list-item-icon>
             <v-icon>{{ item.icon }}</v-icon>
           </v-list-item-icon>
@@ -49,6 +64,7 @@ export default {
       { title: "Dashboard", icon: "mdi-view-dashboard", to: "/" },
       { title: "Grid System", icon: "mdi-image", to: "/grid-system" },
       { title: "Grid List Page", icon: "mdi-image", to: "/grid-list-page" },
+      { title: "Typography", icon: "mdi-image", to: "/typography" },
     ],
     right: null,
   }),

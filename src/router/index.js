@@ -3,6 +3,7 @@ import VueRouter from "vue-router";
 import Dashboard from "@/views/Dashboard";
 import GridSystem from "@/views/GridSystem";
 import GridListPage from "@/views/GridListPage";
+import Typography from "@/views/Typography";
 
 Vue.use(VueRouter);
 
@@ -22,6 +23,11 @@ const routes = [
     name: "GridListPage",
     component: GridListPage,
   },
+  {
+    path: "/typography",
+    name: "Typography",
+    component: Typography
+  }
 ];
 
 const router = new VueRouter({
