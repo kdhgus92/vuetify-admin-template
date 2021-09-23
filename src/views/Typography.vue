@@ -24,7 +24,7 @@
           컨텐츠
         </v-card>
         <v-card
-          class="pa-3"
+          class="pa-3 d-none d-sm-block"
           outlined
         >
           <p class="text-h1">

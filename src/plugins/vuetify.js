@@ -5,19 +5,26 @@ import colors from "vuetify/lib/util/colors";
 
 Vue.use(Vuetify);
 
+const theme = {
+
+  // primary:colors.red,
+  // secondary: '#9C27B0'
+  primary: colors.deepOrange,
+  secondary: colors.red.lighten4, // #FFCDD2
+  accent: colors.indigo.base, // #3F51B5
+}
+
 export default new Vuetify({
   breakpoint: {
     thresholds: {
-      xs: 360
+      // xs: 360
     },
     mobileBreakpoint: 'xs'
   },
   theme: {
     themes: {
-      light: {
-        primary:colors.red,
-        secondary: '#9C27B0'
-      }
+      light:theme,
+      dark: theme
     }
   }
 });
