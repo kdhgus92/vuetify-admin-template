@@ -1,8 +1,8 @@
 <template>
   <v-container>
     <v-row>
-      <v-col 
-        v-for="count in 12" 
+      <v-col
+        v-for="count in 12"
         :key="count"
         cols="12"
         sm="6"
