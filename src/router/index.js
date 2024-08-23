@@ -9,10 +9,18 @@ import Tables from "@/views/Tables";
 import Forms from "@/views/Forms";
 import Buttons from "@/views/Buttons";
 import Icons from "@/views/Icons";
+import DefaultLayout from "@/layouts/default/Index"
 
 Vue.use(VueRouter);
 
 const routes = [
+  {
+    path: '/',
+    component: DefaultLayout,
+    children: [
+
+    ]
+  },
   {
     path: "/",
     name: "Dashboard",
